@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Add Two Numbers";
+}
+
+<h2>Add Two Numbers</h2>
+
+<form method="get" action="/">
+    <label>Number 1:</label>
+    <input type="number" name="a" />
+    <label>Number 2:</label>
+    <input type="number" name="b" />
+    <button color="red" type="submit">Add</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <h3>Result: @ViewBag.Result</h3>
+}
